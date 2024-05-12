@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Git</title>
+    <link rel="icon" href="./assets/icon.jpg">
+</head>
+<body>
+    <h1>Getting Started with Git: A Beginner's Guide</h1>
+    <h2>Introduction to Git</h2>
+    <p>Git is a distributed version control system that helps you track changes in your files and collaborate with others on projects. It allows multiple users to work on the same files simultaneously while keeping track of every change made. In this blog, we'll dive into the basics of Git, focusing on its installation, configuration, basic commands, and essential concepts.</p>
+    <h2>Version Control Systems</h2>
+    <p>A version control system (VCS) tracks changes to files over time. It enables you to revert to previous versions, compare changes, and collaborate efficiently. Git is one of the most popular VCS, but there are others like Mercurial, SVN, and Perforce. However, we'll primarily focus on Git and its integration with GitHub.</p>
+    <div>
+        <h2>Git Installation</h2>
+        <p>Before diving into Git, you need to ensure it's installed on your system. To check, open your terminal (Command Prompt, Git Bash, or Terminal) and type: <br><b>git --version</b></p>
+        <p>If Git is not installed, follow these steps to download and install it:</p>
+        <ol>
+            <li>Visit the <a href="https://git-scm.com/" target="_blank">official Git website</a>.</li>
+            <li>Download the appropriate version for your operating system.</li>
+            <li>Run the installer and follow the instructions.</li>
+        </ol>
+        <img src="./assets/git-version.png" alt="Image of a screenshot showing how to check if Git is installed and the version">
+        <p>Checking whether git is installed in your machine.</p>
+    </div>
+
+    <div>
+        <h2>Configuring Git</h2>
+        <p>Once Git is installed, you need to configure your username and email address to identify your commits. Use the following commands: <br><b>git config --global user.name "Your Name"</b><br><b>git config --global user.email "youremail@example.com"</b></p>
+        <img src="./assets/git-configuring.png" alt="Image of a screenshot showing how to configure git.">
+        <p>Configuring your username and email address.</p>
+    </div>
+
+    <div>
+        <h2>Git Repository</h2>
+        <p>A Git repository is a storage space where your project's files and revision history are stored. To initialize a Git repository in your project directory, use: <br> <b>git init</b></p>
+        <img src="./assets/git-init.png" alt="Image of a screenshot showing how to initialize a git repository">
+        <p>Initializing a Git repository</p>    
+    </div>
+    <div>
+        <h2>Link Your Local Repository with GitHub:</h2>
+        <p>Copy the URL of your GitHub repository. It should look like <br> <b>"https://github.com/username/repository.git"</b> <br>
+            In your terminal, set the remote URL for your Git repository using the following command (replace <URL> with the URL you copied): <br><b>git remote add origin "URL"</b></p>
+        <img src="./assets/link-repo.png" alt="Image of a screenshot showing how to create a repository on GitHub and linking it with Git">
+        <p>Creating a repository on GitHub and linking it with Git</p>
+    </div>
+
+    <div>
+        <h2>Staging and Committing Changes</h2>
+        <p>In Git, changes are staged before they are committed to the repository. Untracked files are those not yet staged or committed. To stage files, use: <br><b>git add "filename" </b>where "filename" is the name of your file or use: <br></use:br><b>git add . </b>to add all the files in your directory</use:br></p>
+        <img src="./assets/git-staging.png" alt="Imagr of a screenshot showing how to stage and add all your files in your directory">
+        <p>Adding all the files in your directory</p>
+        <p>To commit changes, use: <br><b>git commit -m "Your commit message"</b></p>
+        <img src="./assets/git-commit.png" alt="Image showing a screeshot of how to commint changes.">
+        <p>Committing changes</p>
+    </div>
+
+    <div>
+        <h2>Push Your Local Repository to GitHub:</h2>
+        <p>Finally, Push your commits to the remote repository on GitHub: <br><b>git push -u origin master</b></p>
+    </div>
+
+    <div>
+        <h2>Git Branching</h2>
+        <p>Branches in Git are independent lines of development that allow you to work on features or fixes without affecting the main codebase. They're crucial for collaboration and maintaining a clean codebase.</p>
+        <h3>Creating and Managing Branches</h3>
+        <p>To create a new branch, use: <br><b>git checkout -b new_branch_name</b></p>
+        <img src="./assets/new-branch.png" alt="Image of a screeshot showing how to create a new branch">
+        <p>Creating a new branch</p>
+        <p>To view all branches: <br><b>git branch</b></p>
+        <img src="./assets/check-branches.png" alt="Image of a screeshot showing how to check branches.">
+        <p>Checking branches</p>
+        <p>To switch between branches: <br><b>git checkout branch_name </b>or <b>git switch branch_name</b></p>
+        <img src="./assets/branch-switch.png" alt="Image of a screeshot showing how to switch branches.">
+        <p>Switching branches</p>
+        <h3>Merging Branches</h3>
+        <p>To merge a branch into the active branch, use: <br><b>git merge branch_name</b></p>
+        <h3>Deleting Branches</h3>
+        <p>To delete a branch, use: <br><b>git branch -d branch_name</b></p>
+        <img src="./assets/branch-delete.png" alt="Image of a screenshot showing how to delete a branch">
+        <p>Deleting branches</p>
+    </div>
+    <h2>Next Steps</h2>
+    <p>Now that you've grasped the basics of Git, consider learning more about collaborative workflows, branching strategies, or exploring platforms like GitHub for hosting your repositories and collaborating with others. Dive deeper into Git by exploring topics like rebasing, resolving merge conflicts, and Git hooks. Happy coding!</p>
+
+    <h2>Subscribe to our Newsletter</h2>
+    <form>
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Your first name eg Webster" required>
+        </div>
+        <br>
+        <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Your last name eg Ifedha">
+        </div>
+        <br>
+        <div>
+            <label for="emailAddress">Your email address</label>
+            <input type="email" id="emailAddress" placeholder="ifedhawebster@gmail.com">
+        </div>
+        <br>
+        <button type="submit">Subscribe</button>
+    </form>
+
+
+</body>
+</html>
